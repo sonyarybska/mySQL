@@ -328,15 +328,3 @@ not belonging to the borough Staten Island or Queens or Bronxor Brooklyn.
     ]
  )
 
-10) Знайти середній бал дітей які вивчають математику або фізику
- db.getCollection("students").aggregate(
- [
-  {
-      $match:
-      {
-          $or:[{ lessons:"basic"},{ lessons:"basic"}]
-
-      }
-  }
-    ]
- )
